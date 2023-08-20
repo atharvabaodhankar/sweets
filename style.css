@@ -31,10 +31,10 @@ p{
     color: var(--black);
 }
 section{
-    padding: 3rem 0;
+    padding: 7rem 0;
 }
 #hero{
-    border-bottom: 1px solid #000;
+    padding-top: 3rem;
     padding-bottom: 10rem;
 }
 nav{
@@ -98,6 +98,37 @@ nav img{
 {
     background-image: url(https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/8bd2ac60e3635edca0dd9c09/1d3c943d55b18647f4877013e852dfe3.jpeg);
 }
+/* About Us */
+#aboutus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e3dcd2;
+}
+.aboutus-img{
+    height: 530px;
+    width: 350px;
+    background-image: url(https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/99850a99aa5a5b5bba578834/45689a59667c9370ddeec898b51dcd29.jpeg);
+    background-size: cover;
+    background-position: center;
+    margin-right: 4rem;
+}
+.aboutus-txt{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 600px;
+
+}
+.heading-2{
+    color: #fff;
+    font-size: 4.4rem;
+    font-weight: 400;
+}
+.aboutus-txt .heading{
+    transform: translate(14px, -34px);
+}
 
 @media screen and (max-width:1150px) {
 
@@ -109,6 +140,9 @@ nav img{
     }
     .nav {
         width: 720px;
+    }
+    .aboutus-txt {
+        width: 360px;
     }
 }
 @media screen and (max-width:900px) {
@@ -125,6 +159,19 @@ nav img{
     .hero-box-main{
         width: 90%;
     }
+    #aboutus {
+        flex-direction: column;
+    }
+    .aboutus-img{
+        margin-right: 0;
+        margin-bottom: 5rem;
+    }
+    .aboutus-img {
+        width: 80%;
+    }
+    .aboutus-txt{
+        width: 80%;
+    }
 }
 @media screen and (max-width:800px) {
     
@@ -135,6 +182,9 @@ nav img{
 @media screen and (max-width:600px) {
     .hero-txt {
         width: 100%;
+    }
+    .heading {
+        font-size: 7rem;
     }
 }
 @media screen and (max-width:500px) {
@@ -159,9 +209,20 @@ nav img{
     nav img {
         width: 100px;
     }
+    .aboutus-img {
+        height: 440px;
+    }
+    .aboutus-img {
+        width: 90%;
+    }
+    .aboutus-txt{
+        width: 90%;
+    }
 }
 @media screen and (max-width:400px) {
-    
+    .heading {
+        font-size: 6rem;
+    }
 }
 @media screen and (max-width:300px) {
     
